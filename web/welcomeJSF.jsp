@@ -12,31 +12,22 @@
 <f:view>
     <html>
         <head>
-        <link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" href="style.css" />
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
             <title>Acceuil</title>
         </head>
         <body>
-            
- <div class="Principal">
-                
-<div class="hero-image">
-  <div class="hero-text">
-    <h1>Association Tout Pour l'Enfant</h1>
-    <p>ATPE</p>
-  </div>
-</div> 
-            
-            
-<div class="topnav">
-  <a class="active" href="Index.html">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div> 
-            
-            <br/>
-</div> 
+
+            <div class="Principal">            
+
+                <div class="topnav">
+                    <a class="active" href="Index.html">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div> 
+
+            </div> 
 
         </body>
     </html>

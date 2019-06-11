@@ -46,7 +46,10 @@ header a {
             border-radius: 25px;
             
 }
+
+
  
+
 #contenu
 {
             width :60% ;
@@ -65,7 +68,7 @@ header a {
             background :#0B4280;
             border-radius: 25px;
             margin-bottom: 2%;
-            <!--background-image: url("IMG/atpe.jpg");-->
+            /*background-image: url("IMG/atpe.jpg");*/
 }
  
 footer
