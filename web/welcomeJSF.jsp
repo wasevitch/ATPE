@@ -17,21 +17,27 @@
             <title>Acceuil</title>
         </head>
         <body>
+            
+ <div class="Principal">
+                
 <div class="hero-image">
   <div class="hero-text">
     <h1>Association Tout Pour l'Enfant</h1>
     <p>ATPE</p>
-    <button>Hire me</button>
   </div>
 </div> 
+            
+            
 <div class="topnav">
-  <a class="active" href="#home">Home</a>
+  <a class="active" href="Index.html">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
 </div> 
-            <br><br/>
-           <h1><h:outputText value="ATPE"/></h1>
+            
+            <br/>
+</div> 
+
         </body>
     </html>
 </f:view>
