@@ -43,14 +43,17 @@ body
             margin :auto ;
             padding :25px ;
             background :#effdfd ;
+            padding:10px;
+            border:1px solid;
 }
  
 header
 {
-            width :100% ;
+            ZZZwidth :100% ;
             background :#0B4280 ;
-            overflow: hidden;
-            margin-bottom: 2%;
+            ZZZoverflow: hidden;
+            ZZZmargin-bottom: 2%;
+            ZZZmargin:10px;
 }
 
 header a {
@@ -68,6 +71,8 @@ header a {
             float :left ;
             background :#BBD8FF;
             border-radius: 25px;
+            border:1px solid;
+            margin:10px;
             
 }
 
@@ -88,11 +93,12 @@ header a {
  
 #sidebar-droite
 {
-            width :25% ;
+            width :30% ;
             float :left ;
             background :#0B4280;
             border-radius: 25px;
             margin-bottom: 2%;
+            
             /*background-image: url("IMG/atpe.jpg");*/
 }
  
