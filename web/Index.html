@@ -10,94 +10,123 @@ and open the template in the editor.
         <title>Hello world</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="bootstrap.min.css" />
     </head>
     <body>
-        <!-- JS -->
-        <script type="text/javascript">
-            <!--
-        /* Code*/
+        <style>
+            body {
+                text-align:center;
+                width:100%;
+                height:100%;
+                padding:20px;
+            }
+            .container-fluid{
+                border:1px solid;
+                max-width:1200px;
+                padding:15px;
+            }
+            .content {
+                border-radius: 25px;
+                margin:15px;
+                padding:10px;
+            }
+            .col-left {
+                background :#BBD8FF ;
 
-            //-->
-        </script>
-
-            <div class="hero-image">
-                <div class="hero-text">
-                    <p>Les enfants et moi...une longue histoire :)</p>
+            }
+            .col-main {
+                background :#75B6FF ;
+            }
+            .col-right {
+                background :#0B4280;
+            }
+            .row{
+                margin-top:30px;
+            }
+            .row, .col-md-3, .col-md-6{
+                border:1px solid;
+            }
+        </style>
+        TEST <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="container-fluid">
+            <header>
+                <div class="nav">
+                    <a class="active" href="Index.html">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#contact">Faire un Don</a>
+                    <a href="#about">About</a>
                 </div>
-            </div> 
-
-        <div class="global">
-
-            <header>                                           
-                <a class="active" href="Index.html">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#contact">Faire un Don</a>
-                <a href="#about">About</a>
             </header>
-            <div id="menu-gauche">
-                <h2 style="text-align: center">Evénements à venir...</h2>
-                <ul>
-                    <li>Journée de l'enfant Africain</li>
-                    <li>Semaine nationale de la jeunesse</li>
-                    <li>Journée internationale de l'enfant</li>
-                    <li>Podium (Centre socio Culturel de Derklé)</li>
-                </ul>
+            <?-- BOOTSTRAP BESOIN DE METTRE UNE ROW POUR ENCADRER "UNE LIGNE" DE COLONNES -->
+            <div class="row">
+            <?-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 4 sur 12 en petit, 3 colonnes sur 12 à partir d un écran moyen  -->
+            <div class="col-md-3 col-sm-4">
+            <div class="content col-left">
+            <h2 style="text-align: center">Evénements à venir...</h2>
+            <ul>
+            <li>Journée de l'enfant Africain</li>
+            <li>Semaine nationale de la jeunesse</li>
+            <li>Journée internationale de l'enfant</li>
+            <li>Podium (Centre socio Culturel de Derklé)</li>
+            </ul>
             </div>
-            <div id="contenu">
-                <h1>Association Tout Pour L'enfant</h1>
-                
-                <p>
-                    <br/> <h4>PRESENTATION</h4> <br/> 
-                    
-                    Basée à Dakar dans la Commune d'Arrondissement de Dieuppeul-Derklé, l'Association Tout Pour l’Enfant (ATPE) a été créée le 13 janvier 2001 par des étudiants, artistes, acteurs culturels et éducateurs spécialisés. 
-                    L’ATPE s’active dans l’encadrement d’enfants issus de milieux plus ou moins défavorisés dont les âges varient entre 07 et 17. Ces enfants sont généralement scolarisés. Ils sont encadrés dans des activités éducatives, culturelles et artistiques et portent le plaidoyer pour le respect des droits de l’enfant en général et les enfants de la rue.
-                    Elle est reconnu juridiquement et légalement depuis le 24 janvier 2002 sous le n°11090 / M.INT/DAGAT/DEL/AS délivré par le Ministère de l’Intérieur. Depuis sa création, elle a mené ses activités au Complexe Socioculturel de Derklé et aujourd’hui elle est délocalisée au Quartier Grand Médine de Keur Massar en attendant la Construction d’un Centre Social qui abritera son siège social.
-                
-
-                    <br/> <h4>OBJECTIFS</h4>  <br/>
-
-                    Les objectifs principaux de l’ATPE sont :<br/>
-                    •	Œuvrer pour la promotion et la protection des droits de l’enfant ;<br/>
-                    •	Promouvoir des actions sociales, éducatives et culturelles ;<br/>
-                    •	Développer un esprit de fraternité, de solidarité et de tolérance chez les membres (adultes et enfants) ;<br/>
-                    •	Promouvoir l’épanouissement culturel des enfants dans un cadre de vie favorable.<br/>
-
-                <br/> <h4>ACTIVITES</h4>  <br/>
-
-                    L'ATPE mène des activités Educatives, Sanitaires, Sociales, Culturelles et Sportives au niveau de Dakar et sa banlieue qui se traduisent par :
-                    <br/>
-                    	L’éducation  et la formation à la citoyenneté et à l’apprentissage de métier ;<br/>
-                    	La création d’une Troupe théâtrale qui fait des prestations artistiques thématiques et éducatives.<br/>
-                    	Les ateliers d’art et de fabrication d’objets artisanaux ;<br/>
-                    	La pratique sportive (arts martiaux, athlétisme et football) ;<br/>
-                    	Les excursions et découvertes de sites historiques ;
-
-                
-
             </div>
-            <div id="sidebar-droite">
-                <h2>REALISATIONS</h2>
+            <?-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 8 sur 12 en petit, 6 colonnes sur 12 à partir d un écran moyen  -->
+            <div class="col-md-6 col-sm-8">
+            <div class="content col-main"><h1>Association Tout Pour L'enfant</h1>
+            <p>
+            <br/> <h4>PRESENTATION</h4> <br/> 
 
-                <p>
-                    Depuis en 2001 année de sa création, l’ATPE a fait beaucoup de réalisations dont voici quelques unes :
-                </p> 
+            Basée à Dakar dans la Commune d'Arrondissement de Dieuppeul-Derklé, l'Association Tout Pour l’Enfant (ATPE) a été créée le 13 janvier 2001 par des étudiants, artistes, acteurs culturels et éducateurs spécialisés. 
+            L’ATPE s’active dans l’encadrement d’enfants issus de milieux plus ou moins défavorisés dont les âges varient entre 07 et 17. Ces enfants sont généralement scolarisés. Ils sont encadrés dans des activités éducatives, culturelles et artistiques et portent le plaidoyer pour le respect des droits de l’enfant en général et les enfants de la rue.
+            Elle est reconnu juridiquement et légalement depuis le 24 janvier 2002 sous le n°11090 / M.INT/DAGAT/DEL/AS délivré par le Ministère de l’Intérieur. Depuis sa création, elle a mené ses activités au Complexe Socioculturel de Derklé et aujourd’hui elle est délocalisée au Quartier Grand Médine de Keur Massar en attendant la Construction d’un Centre Social qui abritera son siège social.
 
-                <ul>
-                    <li>Encadrement de plus de 5000 enfants issus de familles démunies dans des activités éducatives, sociales et culturelles</li>
-                    <li>Participation des enfants de l’association depuis 2002 à tous les événements spéciaux en faveur des enfants au niveau national (journée de l'enfant africain, journée des droits de l’enfant, semaine national de l'enfant, etc.,..) mais également a beaucoup d'activités et d'émissions télévisée et radiophoniques pour un plaidoyer en faveur des enfants</li>
-                    <li>Formation de trois encadreurs en Techniques d’écriture de scénarios de théâtre de sensibilisation sur le VIH/Sida avec l’UNESCO BREDA en 2002 et 2003 </li>
-                    <li>Séminaires et Ateliers sur, la Déclaration des enfants à l’Etat civil, la Revue des Pairs de la CEDEAO, les actions urgentes des enfants de la rue, le genre, les pires formes de travail des enfants…. avec la Direction de la Protection des Droits de l’Enfant depuis 2004</li>
-                    <li>Orientation et collaboration avec des Volontaires Allemands, Suisses, Danois, Anglais, Suédois et italiens en 2004, 2005, 2006, 2007 et 2008 (début de la crise économique en Europe, ce qui a freiné la collaboration avec SYTO)</li>
-                    <li>Construction d'une salle à l'Ecole élémentaire Derklé 2 à Dakar pour abriter la bibliothèque de l’école en 2006 avec l’appui de Daniela Oppliger, volontaire suisse</li>
-                    <li>Formation de deux encadreurs en secourisme à la Croix Rouge Sénégalaise, département de Dakar en 2007</li>
-                    <li>Formation à la Citoyenneté avec le Conseil National de la Jeunesse du Sénégal (CNJS), et l’ONG Femme Education Culture Santé et Développement en Afrique (FECSDA) en 2017 et 2018</li>
-                </ul>
 
+            <br/> <h4>OBJECTIFS</h4>  <br/>
+
+            Les objectifs principaux de l’ATPE sont :<br/>
+            •	Œuvrer pour la promotion et la protection des droits de l’enfant ;<br/>
+            •	Promouvoir des actions sociales, éducatives et culturelles ;<br/>
+            •	Développer un esprit de fraternité, de solidarité et de tolérance chez les membres (adultes et enfants) ;<br/>
+            •	Promouvoir l’épanouissement culturel des enfants dans un cadre de vie favorable.<br/>
+
+            <br/> <h4>ACTIVITES</h4>  <br/>
+
+            L'ATPE mène des activités Educatives, Sanitaires, Sociales, Culturelles et Sportives au niveau de Dakar et sa banlieue qui se traduisent par :
+            <br/>
+            	L’éducation  et la formation à la citoyenneté et à l’apprentissage de métier ;<br/>
+            	La création d’une Troupe théâtrale qui fait des prestations artistiques thématiques et éducatives.<br/>
+            	Les ateliers d’art et de fabrication d’objets artisanaux ;<br/>
+            	La pratique sportive (arts martiaux, athlétisme et football) ;<br/>
+            	Les excursions et découvertes de sites historiques ;
+            </div>
+            </div>
+            <?-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 4 sur 12 en petit, 3 colonnes sur 12 à partir d un écran moyen  -->
+            <div class="col-md-3 col-sm-12">
+            <div class="content col-right"><h2>REALISATIONS</h2>
+            <p>
+            Depuis en 2001 année de sa création, l’ATPE a fait beaucoup de réalisations dont voici quelques unes :
+            </p> 
+
+            <ul>
+            <li>Encadrement de plus de 5000 enfants issus de familles démunies dans des activités éducatives, sociales et culturelles</li>
+            <li>Participation des enfants de l’association depuis 2002 à tous les événements spéciaux en faveur des enfants au niveau national (journée de l'enfant africain, journée des droits de l’enfant, semaine national de l'enfant, etc.,..) mais également a beaucoup d'activités et d'émissions télévisée et radiophoniques pour un plaidoyer en faveur des enfants</li>
+            <li>Formation de trois encadreurs en Techniques d’écriture de scénarios de théâtre de sensibilisation sur le VIH/Sida avec l’UNESCO BREDA en 2002 et 2003 </li>
+            <li>Séminaires et Ateliers sur, la Déclaration des enfants à l’Etat civil, la Revue des Pairs de la CEDEAO, les actions urgentes des enfants de la rue, le genre, les pires formes de travail des enfants…. avec la Direction de la Protection des Droits de l’Enfant depuis 2004</li>
+            <li>Orientation et collaboration avec des Volontaires Allemands, Suisses, Danois, Anglais, Suédois et italiens en 2004, 2005, 2006, 2007 et 2008 (début de la crise économique en Europe, ce qui a freiné la collaboration avec SYTO)</li>
+            <li>Construction d'une salle à l'Ecole élémentaire Derklé 2 à Dakar pour abriter la bibliothèque de l’école en 2006 avec l’appui de Daniela Oppliger, volontaire suisse</li>
+            <li>Formation de deux encadreurs en secourisme à la Croix Rouge Sénégalaise, département de Dakar en 2007</li>
+            <li>Formation à la Citoyenneté avec le Conseil National de la Jeunesse du Sénégal (CNJS), et l’ONG Femme Education Culture Santé et Développement en Afrique (FECSDA) en 2017 et 2018</li>
+            </ul>
+            </div>
+            </div>
             </div>
             <footer>
-                FOOTER
+            <p>Powered by: Ousseynou Kane DIALLO </p>
+            <p>Contact information: <a href="mailto:Ouzinkane@example.com">
+            Ouzinkane@example.com</a>.</p>
             </footer>
-        </div>
-    </body>
-</html>
+            </div>
+            </body>
+            </html>
