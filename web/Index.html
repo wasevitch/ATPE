@@ -6,13 +6,17 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+    
     <head>
         <title>Hello world</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="bootstrap.min.css" />
     </head>
+    
     <body>
+
+
         <style>
             body {
                 text-align:center;
@@ -48,7 +52,41 @@ and open the template in the editor.
             }
         </style>
         TEST <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <div class="container-fluid">
+        <div class="container-fluid"> 
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="IMG/enfant.jpg" style="width:100%" alt="test">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="IMG/enfant3.jpg" style="width:100%" alt="test">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="IMG/enfant2.jpg" style="width:100%" alt="test">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div> 
             <header>
                 <div class="nav">
                     <a class="active" href="Index.html">Home</a>
@@ -58,75 +96,76 @@ and open the template in the editor.
                     <a href="#about">About</a>
                 </div>
             </header>
-            <?-- BOOTSTRAP BESOIN DE METTRE UNE ROW POUR ENCADRER "UNE LIGNE" DE COLONNES -->
+            <!-- BOOTSTRAP BESOIN DE METTRE UNE ROW POUR ENCADRER "UNE LIGNE" DE COLONNES -->
             <div class="row">
-            <?-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 4 sur 12 en petit, 3 colonnes sur 12 à partir d un écran moyen  -->
-            <div class="col-md-3 col-sm-4">
-            <div class="content col-left">
-            <h2 style="text-align: center">Evénements à venir...</h2>
-            <ul>
-            <li>Journée de l'enfant Africain</li>
-            <li>Semaine nationale de la jeunesse</li>
-            <li>Journée internationale de l'enfant</li>
-            <li>Podium (Centre socio Culturel de Derklé)</li>
-            </ul>
-            </div>
-            </div>
-            <?-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 8 sur 12 en petit, 6 colonnes sur 12 à partir d un écran moyen  -->
-            <div class="col-md-6 col-sm-8">
-            <div class="content col-main"><h1>Association Tout Pour L'enfant</h1>
-            <p>
-            <br/> <h4>PRESENTATION</h4> <br/> 
+                <!-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 4 sur 12 en petit, 3 colonnes sur 12 à partir d un écran moyen  -->
+                <div class="col-md-3 col-sm-4">
+                    <div class="content col-left">
+                        <h2 style="text-align: center">Evénements à venir...</h2>
+                        <ul>
+                            <li>Journée de l'enfant Africain</li>
+                            <li>Semaine nationale de la jeunesse</li>
+                            <li>Journée internationale de l'enfant</li>
+                            <li>Podium (Centre socio Culturel de Derklé)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 8 sur 12 en petit, 6 colonnes sur 12 à partir d un écran moyen  -->
+                <div class="col-md-6 col-sm-8">
+                    <div class="content col-main"><h1>Association Tout Pour L'enfant</h1>
+                        <p>
+                        <br/> <h4>PRESENTATION</h4> <br/> 
 
-            Basée à Dakar dans la Commune d'Arrondissement de Dieuppeul-Derklé, l'Association Tout Pour l’Enfant (ATPE) a été créée le 13 janvier 2001 par des étudiants, artistes, acteurs culturels et éducateurs spécialisés. 
-            L’ATPE s’active dans l’encadrement d’enfants issus de milieux plus ou moins défavorisés dont les âges varient entre 07 et 17. Ces enfants sont généralement scolarisés. Ils sont encadrés dans des activités éducatives, culturelles et artistiques et portent le plaidoyer pour le respect des droits de l’enfant en général et les enfants de la rue.
-            Elle est reconnu juridiquement et légalement depuis le 24 janvier 2002 sous le n°11090 / M.INT/DAGAT/DEL/AS délivré par le Ministère de l’Intérieur. Depuis sa création, elle a mené ses activités au Complexe Socioculturel de Derklé et aujourd’hui elle est délocalisée au Quartier Grand Médine de Keur Massar en attendant la Construction d’un Centre Social qui abritera son siège social.
+                        Basée à Dakar dans la Commune d'Arrondissement de Dieuppeul-Derklé, l'Association Tout Pour l’Enfant (ATPE) a été créée le 13 janvier 2001 par des étudiants, artistes, acteurs culturels et éducateurs spécialisés. 
+                        L’ATPE s’active dans l’encadrement d’enfants issus de milieux plus ou moins défavorisés dont les âges varient entre 07 et 17. Ces enfants sont généralement scolarisés. Ils sont encadrés dans des activités éducatives, culturelles et artistiques et portent le plaidoyer pour le respect des droits de l’enfant en général et les enfants de la rue.
+                        Elle est reconnu juridiquement et légalement depuis le 24 janvier 2002 sous le n°11090 / M.INT/DAGAT/DEL/AS délivré par le Ministère de l’Intérieur. Depuis sa création, elle a mené ses activités au Complexe Socioculturel de Derklé et aujourd’hui elle est délocalisée au Quartier Grand Médine de Keur Massar en attendant la Construction d’un Centre Social qui abritera son siège social.
 
 
-            <br/> <h4>OBJECTIFS</h4>  <br/>
+                        <br/> <h4>OBJECTIFS</h4>  <br/>
 
-            Les objectifs principaux de l’ATPE sont :<br/>
-            •	Œuvrer pour la promotion et la protection des droits de l’enfant ;<br/>
-            •	Promouvoir des actions sociales, éducatives et culturelles ;<br/>
-            •	Développer un esprit de fraternité, de solidarité et de tolérance chez les membres (adultes et enfants) ;<br/>
-            •	Promouvoir l’épanouissement culturel des enfants dans un cadre de vie favorable.<br/>
+                        Les objectifs principaux de l’ATPE sont :<br/>
+                        •	Œuvrer pour la promotion et la protection des droits de l’enfant ;<br/>
+                        •	Promouvoir des actions sociales, éducatives et culturelles ;<br/>
+                        •	Développer un esprit de fraternité, de solidarité et de tolérance chez les membres (adultes et enfants) ;<br/>
+                        •	Promouvoir l’épanouissement culturel des enfants dans un cadre de vie favorable.<br/>
 
-            <br/> <h4>ACTIVITES</h4>  <br/>
+                        <br/> <h4>ACTIVITES</h4>  <br/>
 
-            L'ATPE mène des activités Educatives, Sanitaires, Sociales, Culturelles et Sportives au niveau de Dakar et sa banlieue qui se traduisent par :
-            <br/>
-            	L’éducation  et la formation à la citoyenneté et à l’apprentissage de métier ;<br/>
-            	La création d’une Troupe théâtrale qui fait des prestations artistiques thématiques et éducatives.<br/>
-            	Les ateliers d’art et de fabrication d’objets artisanaux ;<br/>
-            	La pratique sportive (arts martiaux, athlétisme et football) ;<br/>
-            	Les excursions et découvertes de sites historiques ;
-            </div>
-            </div>
-            <?-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 4 sur 12 en petit, 3 colonnes sur 12 à partir d un écran moyen  -->
-            <div class="col-md-3 col-sm-12">
-            <div class="content col-right"><h2>REALISATIONS</h2>
-            <p>
-            Depuis en 2001 année de sa création, l’ATPE a fait beaucoup de réalisations dont voici quelques unes :
-            </p> 
+                        L'ATPE mène des activités Educatives, Sanitaires, Sociales, Culturelles et Sportives au niveau de Dakar et sa banlieue qui se traduisent par :
+                        <br/>
+                        	L’éducation  et la formation à la citoyenneté et à l’apprentissage de métier ;<br/>
+                        	La création d’une Troupe théâtrale qui fait des prestations artistiques thématiques et éducatives.<br/>
+                        	Les ateliers d’art et de fabrication d’objets artisanaux ;<br/>
+                        	La pratique sportive (arts martiaux, athlétisme et football) ;<br/>
+                        	Les excursions et découvertes de sites historiques ;
+                    </div>
+                </div>
+                <!-- ON UTILISE BOOTSTRAP : 12 colonne sur très petit (pas besoin d indiquer), 4 sur 12 en petit, 3 colonnes sur 12 à partir d un écran moyen  -->
+                <div class="col-md-3 col-sm-12">
+                    <div class="content col-right"><h2>REALISATIONS</h2>
+                        <p>
+                            Depuis en 2001 année de sa création, l’ATPE a fait beaucoup de réalisations dont voici quelques unes :
+                        </p> 
 
-            <ul>
-            <li>Encadrement de plus de 5000 enfants issus de familles démunies dans des activités éducatives, sociales et culturelles</li>
-            <li>Participation des enfants de l’association depuis 2002 à tous les événements spéciaux en faveur des enfants au niveau national (journée de l'enfant africain, journée des droits de l’enfant, semaine national de l'enfant, etc.,..) mais également a beaucoup d'activités et d'émissions télévisée et radiophoniques pour un plaidoyer en faveur des enfants</li>
-            <li>Formation de trois encadreurs en Techniques d’écriture de scénarios de théâtre de sensibilisation sur le VIH/Sida avec l’UNESCO BREDA en 2002 et 2003 </li>
-            <li>Séminaires et Ateliers sur, la Déclaration des enfants à l’Etat civil, la Revue des Pairs de la CEDEAO, les actions urgentes des enfants de la rue, le genre, les pires formes de travail des enfants…. avec la Direction de la Protection des Droits de l’Enfant depuis 2004</li>
-            <li>Orientation et collaboration avec des Volontaires Allemands, Suisses, Danois, Anglais, Suédois et italiens en 2004, 2005, 2006, 2007 et 2008 (début de la crise économique en Europe, ce qui a freiné la collaboration avec SYTO)</li>
-            <li>Construction d'une salle à l'Ecole élémentaire Derklé 2 à Dakar pour abriter la bibliothèque de l’école en 2006 avec l’appui de Daniela Oppliger, volontaire suisse</li>
-            <li>Formation de deux encadreurs en secourisme à la Croix Rouge Sénégalaise, département de Dakar en 2007</li>
-            <li>Formation à la Citoyenneté avec le Conseil National de la Jeunesse du Sénégal (CNJS), et l’ONG Femme Education Culture Santé et Développement en Afrique (FECSDA) en 2017 et 2018</li>
-            </ul>
-            </div>
-            </div>
+                        <ul>
+                            <li>Encadrement de plus de 5000 enfants issus de familles démunies dans des activités éducatives, sociales et culturelles</li>
+                            <li>Participation des enfants de l’association depuis 2002 à tous les événements spéciaux en faveur des enfants au niveau national (journée de l'enfant africain, journée des droits de l’enfant, semaine national de l'enfant, etc.,..) mais également a beaucoup d'activités et d'émissions télévisée et radiophoniques pour un plaidoyer en faveur des enfants</li>
+                            <li>Formation de trois encadreurs en Techniques d’écriture de scénarios de théâtre de sensibilisation sur le VIH/Sida avec l’UNESCO BREDA en 2002 et 2003 </li>
+                            <li>Séminaires et Ateliers sur, la Déclaration des enfants à l’Etat civil, la Revue des Pairs de la CEDEAO, les actions urgentes des enfants de la rue, le genre, les pires formes de travail des enfants…. avec la Direction de la Protection des Droits de l’Enfant depuis 2004</li>
+                            <li>Orientation et collaboration avec des Volontaires Allemands, Suisses, Danois, Anglais, Suédois et italiens en 2004, 2005, 2006, 2007 et 2008 (début de la crise économique en Europe, ce qui a freiné la collaboration avec SYTO)</li>
+                            <li>Construction d'une salle à l'Ecole élémentaire Derklé 2 à Dakar pour abriter la bibliothèque de l’école en 2006 avec l’appui de Daniela Oppliger, volontaire suisse</li>
+                            <li>Formation de deux encadreurs en secourisme à la Croix Rouge Sénégalaise, département de Dakar en 2007</li>
+                            <li>Formation à la Citoyenneté avec le Conseil National de la Jeunesse du Sénégal (CNJS), et l’ONG Femme Education Culture Santé et Développement en Afrique (FECSDA) en 2017 et 2018</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <footer>
-            <p>Powered by: Ousseynou Kane DIALLO </p>
-            <p>Contact information: <a href="mailto:Ouzinkane@example.com">
-            Ouzinkane@example.com</a>.</p>
+                <p>Powered by: Ousseynou Kane DIALLO </p>
+                <p>Contact information: <a href="mailto:Ouzinkane@example.com">
+                        Ouzinkane@example.com</a>.</p>
             </footer>
-            </div>
-            </body>
-            </html>
+        </div>
+<script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
